@@ -17,17 +17,35 @@ layout: default
 
     <!-- Main -->
     <div id="main" data-exif='{{ site.exif }}'>
-        {% for image in site.static_files %}
-        {% if image.path contains 'fulls' %}
+        {% if site.data.photos %}
+        {% assign photos = site.data.photos | sort: "date" | reverse %}
+        {% for photo in photos %}
+        {% assign image = site.static_files | where: "name", photo.file | first %}
+        {% if image and image.path contains 'fulls' %}
         <article class="thumb">
             <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
-                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
+                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}"
+                     alt="{{ image.name | split:'.' | first | replace:'_',' ' }}"
                      data-name="{{ image.name }}"/></a>
             <!--<h2></h2>
             <p></p>-->
         </article>
         {% endif %}
         {% endfor %}
+        {% else %}
+        {% for image in site.static_files %}
+        {% if image.path contains 'fulls' %}
+        <article class="thumb">
+            <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
+                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}"
+                     alt="{{ image.name | split:'.' | first | replace:'_',' ' }}"
+                     data-name="{{ image.name }}"/></a>
+            <!--<h2></h2>
+            <p></p>-->
+        </article>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
     </div>
 
     <!-- Footer -->
