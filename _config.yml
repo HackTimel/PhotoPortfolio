@@ -3,27 +3,25 @@ baseurl: ""
 # baseurl: "" # Comment the above line and uncomment this to test the website locally
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
-google_analytics: "G-J9Z95JRQ7M "
+google_analytics: "G-DJYCM9GH8Y"
 
 # UI configs
-title: "Photography"
+title: "Théodore Pénicaut"
 subtitle: ""
 author: "Théodore Pénicaut"
 header:
- title: "Photography"
+ title: "My Photos"
  subtitle: "by Théodore Pénicaut"
 footer:
- name: "Hey there, my name is Ram"
- bio: "I am a software developer and a tech aficionado. Love making teeny tiny apps solving tiny problems in life and now learning photography."
- github: "Want a website like this for yourself for free? Just <a href=\"https://github.com/rampatra/photography\">fork this repo on github</a> ;)"
-web_design: "AJ"
+ name: "Hey there, my name is Théodore"
+ bio: "I'm a beginner photograph, I mainly take pictures with my drone, a DJI mini 2SE. You will find here the best photos I've take with it. \n You can also check out my youtube page to see the videos I've taken with my FPV drone !!"
+
 
 social_urls:
-  twitter: "https://www.twitter.com/rampatra_"
-  instagram: "https://www.instagram.com/ram_patra"
-  dribbble: "https://dribbble.com/rampatra"
-  linkedin: "https://in.linkedin.com/in/ram-patra"
-  github: "https://www.github.com/rampatra"
+  twitter: "https://x.com/HackTimail"
+  instagram: "https://www.instagram.com/theodore.pnct"
+  youtube: "https://www.youtube.com/@Hack_Timail" 
+  github: "https://www.github.com/Hack_Timel"
 
 # Configure which exif data to display
 # Tag is the actual exif tag, icon is a fontawesome icon. Use JSON notation without line breaks
