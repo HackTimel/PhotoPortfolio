@@ -14,7 +14,17 @@ header:
  subtitle: "by Théodore Pénicaut"
 footer:
  name: "Hey there, my name is Théodore"
- bio: "I'm a beginner photograph, I mainly take pictures with my drone, a DJI mini 2SE. You will find here the best photos I've take with it. \n You can also check out my youtube page to see the videos I've taken with my FPV drone !!"
+ bio: " I'm a beginner photograph, I mainly take pictures with my drone, a DJI mini 2SE. You will find here the best photos I've take with it.
+   You can also check out my youtube page to see the videos I've taken with my FPV drone !!<br><br>
+
+  All images displayed on this website are licensed under the.<a href='https://creativecommons.org/licenses/by-nc/4.0/' target='_blank' rel='noopener'>
+    Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)
+  </a>. If you need an image for commercial use, please contact me via the contact form or through my social media."
+
+
+
+
+
 
 
 social_urls:
